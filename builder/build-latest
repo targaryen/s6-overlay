@@ -6,9 +6,11 @@ set -x
 ## PARAMS
 ##
 
-RELEASE_VERSION=${RELEASE_VERSION:-1.18.1.1}
+#RELEASE_VERSION=${RELEASE_VERSION:-1.18.1.1}
+RELEASE_VERSION=${RELEASE_VERSION:-1.18.1-nostatic}
 SKAWARE_VERSION=${RELEASE_VERSION%.*}
-SKAWARE_SOURCE=${SKAWARE_SOURCE:-https://github.com/just-containers/skaware/releases/download/v$SKAWARE_VERSION}
+#SKAWARE_SOURCE=${SKAWARE_SOURCE:-https://github.com/just-containers/skaware/releases/download/v$SKAWARE_VERSION}
+SKAWARE_SOURCE=${SKAWARE_SOURCE:-https://github.com/targaryen/skaware/releases/download/v$SKAWARE_VERSION}
 
 PWD=$(pwd)
 OVERLAY_SRC_PATH=${OVERLAY_SRC_PATH:-$PWD/overlay-rootfs}
